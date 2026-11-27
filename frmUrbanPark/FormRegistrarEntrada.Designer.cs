@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             grpBuscarVeiculo = new GroupBox();
-            maskedTextBox1 = new MaskedTextBox();
+            mskPlacaVeiculo = new MaskedTextBox();
             lblPlacaVeiculo = new Label();
             btnBuscarPorPlaca = new Button();
             grpMovimentacao = new GroupBox();
@@ -57,7 +57,7 @@
             // 
             // grpBuscarVeiculo
             // 
-            grpBuscarVeiculo.Controls.Add(maskedTextBox1);
+            grpBuscarVeiculo.Controls.Add(mskPlacaVeiculo);
             grpBuscarVeiculo.Controls.Add(lblPlacaVeiculo);
             grpBuscarVeiculo.Controls.Add(btnBuscarPorPlaca);
             grpBuscarVeiculo.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -69,12 +69,12 @@
             grpBuscarVeiculo.TabStop = false;
             grpBuscarVeiculo.Text = "Buscar Veículo";
             // 
-            // maskedTextBox1
+            // mskPlacaVeiculo
             // 
-            maskedTextBox1.Location = new Point(157, 38);
-            maskedTextBox1.Name = "maskedTextBox1";
-            maskedTextBox1.Size = new Size(133, 27);
-            maskedTextBox1.TabIndex = 2;
+            mskPlacaVeiculo.Location = new Point(157, 38);
+            mskPlacaVeiculo.Name = "mskPlacaVeiculo";
+            mskPlacaVeiculo.Size = new Size(133, 27);
+            mskPlacaVeiculo.TabIndex = 2;
             // 
             // lblPlacaVeiculo
             // 
@@ -95,11 +95,12 @@
             btnBuscarPorPlaca.ImageAlign = ContentAlignment.MiddleLeft;
             btnBuscarPorPlaca.Location = new Point(365, 38);
             btnBuscarPorPlaca.Name = "btnBuscarPorPlaca";
-            btnBuscarPorPlaca.Size = new Size(158, 30);
+            btnBuscarPorPlaca.Size = new Size(155, 38);
             btnBuscarPorPlaca.TabIndex = 0;
             btnBuscarPorPlaca.Text = "Buscar por Placa";
             btnBuscarPorPlaca.TextImageRelation = TextImageRelation.ImageBeforeText;
             btnBuscarPorPlaca.UseVisualStyleBackColor = true;
+            btnBuscarPorPlaca.Click += btnBuscarPorPlaca_Click;
             // 
             // grpMovimentacao
             // 
@@ -173,7 +174,7 @@
             // 
             // txtVagaSelecionada
             // 
-            txtVagaSelecionada.BackColor = SystemColors.ScrollBar;
+            txtVagaSelecionada.BackColor = SystemColors.Menu;
             txtVagaSelecionada.Location = new Point(150, 35);
             txtVagaSelecionada.Name = "txtVagaSelecionada";
             txtVagaSelecionada.Size = new Size(167, 25);
@@ -258,6 +259,7 @@
             // 
             // panel1
             // 
+            panel1.BackColor = SystemColors.ActiveCaption;
             panel1.Controls.Add(btnRegistrarEntrada);
             panel1.Controls.Add(btnCancelar);
             panel1.Dock = DockStyle.Bottom;
@@ -269,10 +271,10 @@
             // BannerEntrada
             // 
             BannerEntrada.Dock = DockStyle.Top;
-            BannerEntrada.Image = Properties.Resources.RegistrarEntrada3;
+            BannerEntrada.Image = Properties.Resources.BannerEntrada4;
             BannerEntrada.Location = new Point(0, 0);
             BannerEntrada.Name = "BannerEntrada";
-            BannerEntrada.Size = new Size(800, 86);
+            BannerEntrada.Size = new Size(800, 70);
             BannerEntrada.SizeMode = PictureBoxSizeMode.StretchImage;
             BannerEntrada.TabIndex = 6;
             BannerEntrada.TabStop = false;
@@ -309,7 +311,7 @@
         private Button btnRegistrarEntrada;
         private Button btnCancelar;
         private Label lblPlacaVeiculo;
-        private MaskedTextBox maskedTextBox1;
+        private MaskedTextBox mskPlacaVeiculo;
         private Label lblCliente;
         private TextBox txtNomeCliente;
         private TextBox txtCorModelo;

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using backUrbanPark.Model.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -34,7 +35,35 @@ namespace frmUrbanPark
         {
 
             txtVagaSelecionada.Text = _numVaga;
+            txtVagaSelecionada.Enabled = false;
+        }
 
+        private void btnBuscarPorPlaca_Click(object sender, EventArgs e)
+        {
+
+            DadosEntradaVeiculo? dadosVeiculo = new DadosEntradaVeiculo();
+
+            dadosVeiculo = EntradaRepository.BuscarDadosPorPlaca(mskPlacaVeiculo.Text);
+            if (dadosVeiculo == null)
+            {
+                MessageBox.Show("Veiculo não encontrado",
+                    "Atenção",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Exclamation
+                );
+                txtNomeCliente.Clear();
+                txtCorModelo.Clear();
+
+
+                return;
+            }
+
+            btnRegistrarEntrada.Enabled = true;
+            txtNomeCliente.Text = dadosVeiculo.NomeCliente;
+            txtCorModelo.Text = $"{dadosVeiculo.Cor}/{dadosVeiculo.Modelo}";
+
+
+            
         }
     }
 }

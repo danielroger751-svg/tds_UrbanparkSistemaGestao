@@ -70,6 +70,7 @@
             // 
             // panel1
             // 
+            panel1.BackColor = SystemColors.ActiveCaption;
             panel1.Controls.Add(btnRegistrarSaida);
             panel1.Controls.Add(btnCancelar);
             panel1.Dock = DockStyle.Bottom;
@@ -81,11 +82,12 @@
             // btnRegistrarSaida
             // 
             btnRegistrarSaida.BackColor = Color.FromArgb(223, 247, 231);
+            btnRegistrarSaida.FlatStyle = FlatStyle.Popup;
             btnRegistrarSaida.Image = Properties.Resources.icoConfirmado;
             btnRegistrarSaida.ImageAlign = ContentAlignment.MiddleLeft;
-            btnRegistrarSaida.Location = new Point(526, 15);
+            btnRegistrarSaida.Location = new Point(486, 15);
             btnRegistrarSaida.Name = "btnRegistrarSaida";
-            btnRegistrarSaida.Size = new Size(148, 23);
+            btnRegistrarSaida.Size = new Size(148, 32);
             btnRegistrarSaida.TabIndex = 4;
             btnRegistrarSaida.Text = "Registrar Saida";
             btnRegistrarSaida.UseVisualStyleBackColor = false;
@@ -93,11 +95,12 @@
             // btnCancelar
             // 
             btnCancelar.BackColor = Color.FromArgb(254, 224, 221);
+            btnCancelar.FlatStyle = FlatStyle.Popup;
             btnCancelar.Image = Properties.Resources.IcoCancelar;
             btnCancelar.ImageAlign = ContentAlignment.MiddleLeft;
-            btnCancelar.Location = new Point(680, 15);
+            btnCancelar.Location = new Point(674, 15);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(108, 23);
+            btnCancelar.Size = new Size(108, 32);
             btnCancelar.TabIndex = 5;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = false;
@@ -201,8 +204,8 @@
             // lblValorPagar
             // 
             lblValorPagar.AutoSize = true;
-            lblValorPagar.BackColor = Color.FromArgb(223, 247, 231);
-            lblValorPagar.ForeColor = SystemColors.Desktop;
+            lblValorPagar.BackColor = Color.Green;
+            lblValorPagar.ForeColor = Color.White;
             lblValorPagar.Location = new Point(10, 89);
             lblValorPagar.Name = "lblValorPagar";
             lblValorPagar.Size = new Size(92, 17);
@@ -211,7 +214,7 @@
             // 
             // txtValorAPagar
             // 
-            txtValorAPagar.BackColor = Color.FromArgb(223, 247, 231);
+            txtValorAPagar.BackColor = Color.Green;
             txtValorAPagar.Location = new Point(6, 83);
             txtValorAPagar.Margin = new Padding(3, 2, 3, 2);
             txtValorAPagar.Multiline = true;
@@ -327,17 +330,19 @@
             // 
             // btnBuscarPorPlaca
             // 
+            btnBuscarPorPlaca.BackColor = Color.White;
             btnBuscarPorPlaca.Font = new Font("Segoe UI", 9.75F);
             btnBuscarPorPlaca.ForeColor = SystemColors.ActiveCaptionText;
             btnBuscarPorPlaca.Image = Properties.Resources.IcoPesquisaAzul;
             btnBuscarPorPlaca.ImageAlign = ContentAlignment.MiddleLeft;
-            btnBuscarPorPlaca.Location = new Point(399, 23);
+            btnBuscarPorPlaca.Location = new Point(364, 21);
             btnBuscarPorPlaca.Name = "btnBuscarPorPlaca";
-            btnBuscarPorPlaca.Size = new Size(158, 24);
+            btnBuscarPorPlaca.Size = new Size(158, 31);
             btnBuscarPorPlaca.TabIndex = 0;
             btnBuscarPorPlaca.Text = "Buscar por Placa";
             btnBuscarPorPlaca.TextImageRelation = TextImageRelation.ImageBeforeText;
-            btnBuscarPorPlaca.UseVisualStyleBackColor = true;
+            btnBuscarPorPlaca.UseVisualStyleBackColor = false;
+            btnBuscarPorPlaca.Click += btnBuscarPorPlaca_Click;
             // 
             // grpDadosVeiculo
             // 
@@ -406,9 +411,9 @@
             // 
             // grpBuscarVeiculo
             // 
+            grpBuscarVeiculo.Controls.Add(btnBuscarPorPlaca);
             grpBuscarVeiculo.Controls.Add(maskedTextBox1);
             grpBuscarVeiculo.Controls.Add(lblPlacaVeiculo);
-            grpBuscarVeiculo.Controls.Add(btnBuscarPorPlaca);
             grpBuscarVeiculo.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             grpBuscarVeiculo.ForeColor = SystemColors.HotTrack;
             grpBuscarVeiculo.Location = new Point(20, 103);
@@ -421,7 +426,7 @@
             // pictureBox1
             // 
             pictureBox1.Dock = DockStyle.Top;
-            pictureBox1.Image = Properties.Resources.RegistrarSaida3;
+            pictureBox1.Image = Properties.Resources.BannerSaida4;
             pictureBox1.Location = new Point(0, 0);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(800, 75);

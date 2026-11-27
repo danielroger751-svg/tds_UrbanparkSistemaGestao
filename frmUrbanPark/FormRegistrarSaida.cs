@@ -17,5 +17,9 @@ namespace frmUrbanPark
             InitializeComponent();
         }
 
+        private void btnBuscarPorPlaca_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
