@@ -22,6 +22,8 @@ namespace frmUrbanPark
             InitializeComponent();
         }
 
+
+
         public FrmRegistrarEntrada(string numVaga, int idVaga) : this()
         {
             _numVaga = numVaga;
@@ -31,7 +33,7 @@ namespace frmUrbanPark
         private void FrmRegistrarEntrada_Load(object sender, EventArgs e)
         {
 
-
+            txtVagaSelecionada.Text = _numVaga;
 
         }
     }
