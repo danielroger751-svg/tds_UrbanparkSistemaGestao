@@ -63,46 +63,6 @@ namespace frmUrbanPark.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap BannerEntrada {
-            get {
-                object obj = ResourceManager.GetObject("BannerEntrada", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap BannerEntrada2 {
-            get {
-                object obj = ResourceManager.GetObject("BannerEntrada2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap BannerSaida {
-            get {
-                object obj = ResourceManager.GetObject("BannerSaida", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap BannerSaida2 {
-            get {
-                object obj = ResourceManager.GetObject("BannerSaida2", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap carIconVerde {
             get {
                 object obj = ResourceManager.GetObject("carIconVerde", resourceCulture);
@@ -156,6 +116,26 @@ namespace frmUrbanPark.Properties {
         internal static System.Drawing.Bitmap IcoPesquisaAzul {
             get {
                 object obj = ResourceManager.GetObject("IcoPesquisaAzul", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RegistrarEntrada3 {
+            get {
+                object obj = ResourceManager.GetObject("RegistrarEntrada3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RegistrarSaida3 {
+            get {
+                object obj = ResourceManager.GetObject("RegistrarSaida3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

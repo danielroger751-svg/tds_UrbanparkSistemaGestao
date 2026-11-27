@@ -269,10 +269,10 @@
             // BannerEntrada
             // 
             BannerEntrada.Dock = DockStyle.Top;
-            BannerEntrada.Image = Properties.Resources.BannerEntrada2;
+            BannerEntrada.Image = Properties.Resources.RegistrarEntrada3;
             BannerEntrada.Location = new Point(0, 0);
             BannerEntrada.Name = "BannerEntrada";
-            BannerEntrada.Size = new Size(800, 75);
+            BannerEntrada.Size = new Size(800, 86);
             BannerEntrada.SizeMode = PictureBoxSizeMode.StretchImage;
             BannerEntrada.TabIndex = 6;
             BannerEntrada.TabStop = false;
